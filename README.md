@@ -14,19 +14,24 @@ sqlite3
 ctrl + D
 ```
 
-## List Databases
+## Basic SQLite Commands
+
+CRUD operations that are executed once you have an open connection
+running.
+
+### List Databases
 
 ```bash
 .databases
 ```
 
-## List Tables
+### List Tables
 
 ```bash
 .tables
 ```
 
-## Create Table
+### Create Table (syntax)
 
 ```bash
 # CREATE TABLE <db-name>.<new-table-name>(
@@ -36,7 +41,7 @@ ctrl + D
 # );
 ```
 
-## Create Table (ex:)
+### Create Table (ex:)
 
 ```bash
 CREATE TABLE main.movies(
@@ -46,20 +51,26 @@ CREATE TABLE main.movies(
 );
 ```
 
-## Insert Record to Table
+### Insert Record to Table (syntax)
+
+```bash
+# INSERT INTO movies VALUES(<col-1-val>, <col-2-val>, <col-3-val>);
+```
+
+### Insert Record to Table (ex:)
 
 ```bash
 INSERT INTO movies VALUES(1, 'Saving Private Ryan', 1998);
 ```
 
-## List all records from table
+### List all records from table
 
 ```bash
 # SELECT * FROM <table-name>;
 SELECT * FROM movies;
 ```
 
-## Order Data by Key
+### Order Data by Key
 
 ```bash
 #SELECT * FROM <table-name> ORDER BY <column>;
